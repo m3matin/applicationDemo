@@ -27,3 +27,7 @@ frontend can be satrt by cd frontend and then use "npm start"
 MONGO_URI=mongodb://localhost:27017/applicationDemo
 JWT_SECRET=applicationDemo13_01_2025
 JWT_EXPIRY=1m
+
+####################################################################################
+
+also i have added postman collection
