@@ -1,0 +1,61 @@
+{
+	"info": {
+		"_postman_id": "404c4a22-b8fe-4307-a3bd-a2c5c6a95f27",
+		"name": "applicationDemo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "40779819"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"name\": \"John Doe\", \"email\": \"john@example.com\", \"password\": \"123456\" }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:5000/api/users/register"
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"matin01@mailinator.com\",\r\n    \"password\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:5000/api/users/login"
+			},
+			"response": []
+		},
+		{
+			"name": "Check token valid or not",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ODU3MTc4ODgxMDM0YWQyOGMwYmIyNiIsImlhdCI6MTczNjc5OTI2OSwiZXhwIjoxNzM2Nzk5MzI5fQ.EY018W2ploUr6v8fIyPAs4zmjTZQEdvT3CqTX3fXTmY"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:5000/api/users/checkTokenValid"
+			},
+			"response": []
+		}
+	]
+}
